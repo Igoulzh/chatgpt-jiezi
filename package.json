@@ -10,8 +10,9 @@
   },
   "license": "MIT",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "vite --mode development",
+    "pro": "vite --mode production",
+    "build": "VITE_ENV_FILE=.env.production vite build",
     "build:github": "vite build --mode github",
     "preview": "vite preview",
     "commit": "git add . && cz-customizable",
